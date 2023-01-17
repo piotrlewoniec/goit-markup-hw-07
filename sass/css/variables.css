@@ -1,0 +1,15 @@
+/*!web site main variables*/
+:root {
+  --main-text-color: #212121;
+  --second-text-color: #757575;
+  --third-text-color: rgba(255, 255, 255, 0.6);
+  --fourth-text-color: #ffffff;
+  --selected-item-color: #2196f3;
+  --second-nonselected-item-color: #f5f4fa;
+  --dark-backround-color: #2f303a;
+  --decorations-first-color: #afb1b8;
+  --errors-color: #ff1111;
+  /*Fonts*/
+  --main-fonts: "Roboto", "Raleway", sans-serif;
+  /*! Decorations*/
+}/*# sourceMappingURL=variables.css.map */

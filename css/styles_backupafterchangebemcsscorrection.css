@@ -1,5 +1,4 @@
-/* web site main variables*/
-/* 
+/*web site main settings*/
 :root {
   --main-text-color: #212121;
   --second-text-color: #757575;
@@ -9,57 +8,26 @@
   --second-nonselected-item-color: #f5f4fa;
   --dark-backround-color: #2f303a;
   --decorations-first-color: #afb1b8;
-  --errors-color: #ff1111; */
+  --errors-color: #ff1111;
+}
 
-/*Fonts*/
-/* 
-  --main-fonts: 'Roboto', 'Raleway', sans-serif; */
-
-/*Decorations*/
-/* }  */
-
-/*web site main settings*/
-
-/* *,
+*,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-} */
+}
 
-/* body {
-  font-family: var(--main-fonts);
+body {
+  font-family: 'Roboto', 'Raleway', sans-serif;
   color: var(--main-text-color);
-} */
+}
 
 /*web site common settings*/
 
-/*Geometry*/
-
-/* .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section__filter-buttons {
-  padding-top: 94px;
-  padding-bottom: 50px;
-}
-
-.section__portfolio {
-  padding-bottom: 94px;
-} */
-
 /*header settings*/
 
-/* .page-header {
+.page-header {
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
@@ -117,7 +85,7 @@
 
 .page-header__links:visited {
   color: var(--second-text-color);
-} */
+}
 
 .logo-text {
   font-family: 'Raleway';
@@ -783,6 +751,29 @@
 .portfolio1 > li > div:nth-child(3) > p {
   font-size: 16px;
   margin-top: 4px;
+}
+
+/*Geometry*/
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__filter-buttons {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.section__portfolio {
+  padding-bottom: 94px;
 }
 
 /* Modal Window */

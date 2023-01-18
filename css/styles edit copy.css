@@ -6,53 +6,16 @@
   --third-text-color: rgba(255, 255, 255, 0.6); /*links text*/
   --fourth-text-color: #fff; /*text, links text, icons, background*/
   --selected-item-color: #2196f3; /*text, links text, icons, background, links underline, inputs border*/
-  --background-color1: #f5f4fa; /*background cards, background*/
-  --background-color2: #2f303a; /*background*/
+  --second-nonselected-item-color: #f5f4fa; /*background cards, background*/
+  --dark-backround-color: #2f303a; /*background*/
   --decorations-first-color: #afb1b8; /*border, icons*/
-  --errors-color: #f11;
+  --errors-color: #ff1111;
 
   /*Fonts*/
 
   --main-fonts: 'Roboto', 'Raleway', sans-serif;
 
   /*Decorations*/
-  --links-hoverfocus-animation1: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  --icons-hoverfocus-animation1: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  --background-hoverfocus-animation1: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  --box-hoverfocus-animation1: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  --border-hoverfocus-animation1: border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  /* 
-  border-bottom: 1px solid #ececec;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  color: rgba(255, 255, 255, 0.6);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/decorations/teambackground.jpg');
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background: rgba(47, 48, 58, 0.8);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border: 1px solid var(--decorations-first-color);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  background: rgba(33, 150, 243, 0.9);
-  transition: transform 250ms linear;
-  border-right: 1px solid #eeeeee; 
-  border-bottom: 1px solid #eeeeee; 
-  border-left: 1px solid #eeeeee; 
-  background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  color: rgba(117, 117, 117, 0.5);
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-  color: rgba(117, 117, 117, 0.5);
-  color: rgba(33, 150, 243, 1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 
   /* color: rgba(117, 117, 117, 0.5);
   color: rgba(33, 150, 243, 1);
@@ -105,7 +68,7 @@
 }
 
 body {
-  font-family: var(--main-fonts);
+  font-family: 'Roboto', 'Raleway', sans-serif;
   color: var(--main-text-color);
 }
 
@@ -139,7 +102,7 @@ body {
 .page-header {
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ececec; /*ToDo*/
 }
 
 .page-header__items-holder {
@@ -183,7 +146,7 @@ body {
   text-decoration: none;
   color: var(--second-text-color);
   outline: none;
-  transition: var(--links-hoverfocus-animation1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .page-header__links:focus,
@@ -247,7 +210,7 @@ body {
   text-decoration: none;
   color: var(--main-text-color);
   outline: none;
-  transition: var(--links-hoverfocus-animation1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 /* .navigation__links:visited {
@@ -342,7 +305,7 @@ body {
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--background-color2);
+  background-color: var(--dark-backround-color);
 }
 
 .page-footer__items-holder {
@@ -371,7 +334,7 @@ body {
   display: flex;
   flex-direction: column;
   font-style: normal;
-  background-color: var(--background-color2);
+  background-color: var(--dark-backround-color);
 }
 
 .company-address__links {
@@ -381,7 +344,7 @@ body {
   text-decoration: none;
   color: var(--third-text-color);
   outline: none;
-  transition: var(--links-hoverfocus-animation1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .company-address__links:visited {
@@ -415,9 +378,10 @@ body {
   width: 44px;
   outline: none;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1); /*ToDo*/
   fill: var(--fourth-text-color);
-  transition: var(--background-hoverfocus-animation1), var(--icons-hoverfocus-animation1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .company-address__media:focus,
@@ -431,12 +395,12 @@ body {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: var(--third-text-color);
+  color: rgba(255, 255, 255, 0.6); /*ToDo*/
   outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3); /*ToDo*/
   border-radius: 4px;
-  background-color: var(--background-color2);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: var(--dark-backround-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); /*ToDo*/
   margin-right: 12px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -447,7 +411,7 @@ body {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: var(--third-text-color);
+  color: rgba(255, 255, 255, 0.6); /*ToDo*/
 }
 
 .company-newsletter__email:focus {
@@ -467,7 +431,7 @@ body {
   padding-bottom: 10px;
   padding-left: 42px;
   background: var(--selected-item-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /*ToDo*/
   border-radius: 4px;
   border: none;
   fill: var(--fourth-text-color);
@@ -483,9 +447,9 @@ body {
 /*main page settings*/
 
 .ordering {
-  background-color: var(--background-color2);
+  background-color: var(--dark-backround-color);
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/decorations/teambackground.jpg');
+    url('../images/decorations/teambackground.jpg'); /*ToDo*/
   background-position: center;
   background-repeat: no-repeat;
   /* max-width: 1600px;
@@ -529,12 +493,12 @@ body {
   margin-left: auto;
   padding-top: 12px;
   padding-bottom: 12px;
-  transition: var(--box-hoverfocus-animation1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s; /*ToDo*/
 }
 
 .ordering__btn:focus,
 .ordering__btn:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /*ToDo*/
 }
 
 .advantages {
@@ -562,7 +526,7 @@ body {
   justify-content: center;
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: var(--background-color1);
+  background-color: var(--second-nonselected-item-color);
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -616,11 +580,11 @@ body {
   color: var(--fourth-text-color);
   padding-top: 27px;
   padding-bottom: 27px;
-  background: rgba(47, 48, 58, 0.8);
+  background: rgba(47, 48, 58, 0.8); /*ToDo*/
 }
 
 .team__bck-color {
-  background-color: var(--background-color1);
+  background-color: var(--second-nonselected-item-color);
 }
 
 .team__title {
@@ -649,7 +613,7 @@ body {
   width: 270px;
   background: var(--fourth-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 2px 1px rgba(0, 0, 0, 0.2); /*ToDo*/
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -691,7 +655,8 @@ body {
   outline: none;
   border-radius: 50%;
   fill: var(--decorations-first-color);
-  transition: var(--background-hoverfocus-animation1), var(--icons-hoverfocus-animation1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s; /*ToDo*/
 }
 
 .team__items-holder > li > div > div > a:focus,
@@ -722,11 +687,12 @@ body {
   box-sizing: border-box;
   height: 92px;
   width: 170px;
-  border: 1px solid var(--decorations-first-color);
+  border: 1px solid var(--decorations-first-color); /*ToDo*/
   border-radius: 4px;
   outline: none;
   fill: var(--decorations-first-color);
-  transition: var(--icons-hoverfocus-animation1), var(--border-hoverfocus-animation1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s; /*ToDo*/
 }
 
 .contractors > a:focus,
@@ -756,12 +722,13 @@ body {
   padding-right: 20px;
   padding-top: 6px;
   padding-bottom: 6px;
-  background-color: var(--background-color1);
+  background-color: var(--second-nonselected-item-color);
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: var(--links-hoverfocus-animation1), var(--background-hoverfocus-animation1),
-    var(--box-hoverfocus-animation1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s; /*ToDo*/
 }
 
 .filterbuttons1__btn1:focus,
@@ -769,7 +736,7 @@ body {
   color: var(--fourth-text-color);
   background-color: var(--selected-item-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+    0px 2px 2px rgba(0, 0, 0, 0.12); /*ToDo*/
 }
 
 .filterbuttons1__description {
@@ -800,7 +767,7 @@ body {
   font-size: 0;
   overflow: hidden;
   cursor: pointer;
-  transition: var(--box-hoverfocus-animation1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s; /*ToDo*/
 }
 
 .portfolio1 > li:hover,
@@ -827,8 +794,8 @@ body {
   padding-bottom: 49px;
   padding-left: 24px;
   padding-right: 45px;
-  background: rgba(33, 150, 243, 0.9);
-  transition: transform 250ms linear;
+  background: rgba(33, 150, 243, 0.9); /*ToDo*/
+  transition: transform 250ms linear; /*ToDo*/
 }
 
 .portfolio1 > li > div:nth-child(3) {
@@ -839,9 +806,9 @@ body {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 5px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee; /*ToDo*/
+  border-bottom: 1px solid #eeeeee; /*ToDo*/
+  border-left: 1px solid #eeeeee; /*ToDo*/
   background-color: var(--fourth-text-color);
 }
 
@@ -866,7 +833,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2); /*ToDo*/
   transition-property: visibility, opacity;
   transition-duration: 1s;
   opacity: 1;
@@ -891,7 +858,7 @@ body {
   background-color: var(--fourth-text-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 2px 1px rgba(0, 0, 0, 0.2); /*ToDo*/
   cursor: initial;
 }
 
@@ -902,10 +869,10 @@ body {
   width: 30px;
   height: 30px;
   background-color: var(--fourth-text-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1); /*ToDo*/
   border-radius: 50%;
   cursor: pointer;
-  transition: var(--icons-hoverfocus-animation1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s; /*ToDo*/
 }
 
 .modal-window__close-btn:focus,
@@ -957,15 +924,16 @@ body {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: rgba(117, 117, 117, 0.5); /*ToDo*/
   outline: none;
   margin-top: 4px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(33, 33, 33, 0.2); /*ToDo*/
   border-radius: 4px;
-  transition: var(--border-hoverfocus-animation1), var(--icons-hoverfocus-animation1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s; /*ToDo*/
 }
 
 .contact-form1__items:focus {
@@ -977,7 +945,7 @@ body {
 }
 
 .contact-form1__items::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+  color: rgba(117, 117, 117, 0.5); /*ToDo*/
 }
 
 .contact-form1__items:not(:placeholder-shown):required:invalid {
@@ -1043,18 +1011,18 @@ body {
 }
 
 .contact-form1__links {
-  color: rgba(33, 150, 243, 1);
+  color: rgba(33, 150, 243, 1); /*ToDo*/
   outline: none;
-  transition: var(--links-hoverfocus-animation1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s; /*ToDo*/
 }
 
 .contact-form1__links:focus,
 .contact-form1__links:hover {
-  color: rgba(33, 150, 243, 1);
+  color: rgba(33, 150, 243, 1); /*ToDo*/
 }
 
 .contact-form1__links:visited {
-  color: rgba(33, 150, 243, 1);
+  color: rgba(33, 150, 243, 1); /*ToDo*/
 }
 
 .contact-form1__btn {
@@ -1071,6 +1039,6 @@ body {
   background: var(--selected-item-color);
   border: none;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /*ToDo*/
   cursor: pointer;
 }

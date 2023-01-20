@@ -13,19 +13,21 @@
     color: var(--selected-item-color);
   }
 
-  &__second-word-header {
-    color: var(--main-text-color);
-  }
+  &__second-word {
+    &-header {
+      color: var(--main-text-color);
 
-  &__second-word-header:visited {
-    color: var(--main-text-color);
-  }
+      &:visited {
+        color: var(--main-text-color);
+      }
+    }
 
-  &__second-word-footer {
-    color: var(--fourth-text-color);
-  }
+    &-footer {
+      color: var(--fourth-text-color);
 
-  &__second-word-footer:visited {
-    color: var(--fourth-text-color);
+      &:visited {
+        color: var(--fourth-text-color);
+      }
+    }
   }
 }

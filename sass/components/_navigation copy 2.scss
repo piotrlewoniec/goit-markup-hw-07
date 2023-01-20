@@ -29,17 +29,17 @@
 
     &--agency-active {
       color: var(--selected-item-color);
+    }
 
-      &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 78px;
-        height: 4px;
-        width: 51px;
-        border-radius: 2px;
-        background-color: var(--selected-item-color);
-      }
+    &--agency-active::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 78px;
+      height: 4px;
+      width: 51px;
+      border-radius: 2px;
+      background-color: var(--selected-item-color);
     }
 
     &--agency:hover::after {
@@ -55,17 +55,17 @@
 
     &--portfolio-active {
       color: var(--selected-item-color);
+    }
 
-      &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 78px;
-        height: 4px;
-        width: 57px;
-        border-radius: 2px;
-        background-color: var(--selected-item-color);
-      }
+    &--portfolio-active::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 78px;
+      height: 4px;
+      width: 57px;
+      border-radius: 2px;
+      background-color: var(--selected-item-color);
     }
 
     &--portfolio:hover::after {
@@ -81,17 +81,17 @@
 
     &--contact-active {
       color: var(--selected-item-color);
+    }
 
-      &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 78px;
-        height: 4px;
-        width: 57px;
-        border-radius: 2px;
-        background-color: var(--selected-item-color);
-      }
+    &--contact-active::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 78px;
+      height: 4px;
+      width: 57px;
+      border-radius: 2px;
+      background-color: var(--selected-item-color);
     }
 
     &--contact:hover::after {
